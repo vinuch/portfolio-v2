@@ -43,3 +43,21 @@ a {
   backdrop-filter: blur(8px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
 }
+.nav li {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.nav li:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #ad3838;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.nav li:hover:after {
+  transform: scaleX(1);
+}
+.nav li:after {
+  transform-origin: 0% 50%;
+}

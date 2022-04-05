@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      spacing: {
+        '30p': "30%"
+      },
       colors: {
         primary: '#AD3838',
         gray1: '#332A2A',
