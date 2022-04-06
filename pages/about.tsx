@@ -11,15 +11,15 @@ export default function About() {
       <div className={`${styles.container} h-100 `}>
         <AboutBanner />
         <p className="md:w-7/12 text-lg mx-auto text-justify pb-24">
-          Hi, I’m Ifedili Onyegbu, Software Engineer currently based in Nigeria and I love what I do. In all my years as a Developer and Designer I've craved to reconnect with craftsmanship, to make well designed and efficent systems. <br /><br />
+          Hi, I&apos;m Ifedili Onyegbu, Software Engineer currently based in Nigeria and I love what I do. In all my years as a Developer and Designer I&apos;ve craved to reconnect with craftsmanship, to make well designed and efficent systems. <br /><br />
 
-          I started my career as a freelance designer where I built my fundamentals in the design space. Then I went on to do Frontend development with Angular and then Mobile development with Ionic framework. Right now I'm building Web2/3 applications with NodeJS and Solidity as a Backend and Smart Contract Engineer. <br /> <br />
+          I started my career as a freelance designer where I built my fundamentals in the design space. Then I went on to do Frontend development with Angular and then Mobile development with Ionic framework. Right now I&apos;m building Web2/3 applications with NodeJS and Solidity as a Backend and Smart Contract Engineer. <br /> <br />
 
-          I'm currently exploring the Web3 space hoping to make a full switch. And on the side I'm also playing around with Golang <br /><br />
+          I&apos;m currently exploring the Web3 space hoping to make a full switch. And on the side I&apos;m also playing around with Golang <br /><br />
 
-          I'm thrilled by design and logic; and I solve problems for fun. When I'm not working I'm either playing badminton 🏸, whipping my friends on FIFA 🎮, sharing memes 🤡, doing some art work 🎨 or working out at the gym 🏋🏽‍♂️. <br /> <br />
+          I&apos;m thrilled by design and logic; and I solve problems for fun. When I&apos;m not working I&apos;m either playing badminton 🏸, whipping my friends on FIFA 🎮, sharing memes 🤡, doing some art work 🎨 or working out at the gym 🏋🏽‍♂️. <br /> <br />
 
-          Because I'm a huge Angular fan ❤️ this site was built with Angular and without any CSS/animation libraries.
+          Because I&apos;m a huge Angular fan ❤️ this site was built with Angular and without any CSS/animation libraries.
 
 
         </p>
@@ -59,7 +59,7 @@ export default function About() {
               <p>I built and deployed dockerized server-side applications and microservices on AWS.</p>
             </div>
           </li>
-        
+
         </ul>
       </div>
     </DefaultLayout>

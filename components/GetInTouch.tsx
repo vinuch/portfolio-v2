@@ -6,22 +6,22 @@ export default function GetInTouch() {
 
             <div className="py-24 md:px-12">
                 <h2 className="text-center text-2xl font-extrabold"><span className="border-b-4 border-primary">Get</span> in  touch</h2>
-                <p className="text-center my-8 md:w-6/12 mx-auto text-lg">You have an awesome idea you want me to jump on? Feel free to contact me. However, if you have other request or question, I'm still up for it.</p>
+                <p className="text-center my-8 md:w-6/12 mx-auto text-lg">You have an awesome idea you want me to jump on? Feel free to contact me. However, if you have other request or question, I&apos;m still up for it.</p>
                 <div className="flex justify-around items-center w-6/12 md:w-2/12 mx-auto my-12">
                     <div className="rounded-full w-10 h-10">
-                        <a href="https://github.com/vinuch" target="_blank">
+                        <a href="https://github.com/vinuch" target="_blank" rel="noreferrer">
                             <img src="/github1.png" alt="" className="h-full w-auto" />
 
                         </a>
                     </div>
                     <div className="rounded-full w-10 h-10">
-                        <a href="https://twitter.com/dev_vince_" target="_blank">
+                        <a href="https://twitter.com/dev_vince_" target="_blank" rel="noreferrer">
 
                             <img src="/twitter.webp" alt="" className="h-full w-auto" />
                         </a>
                     </div>
                     <div className="rounded-full w-10 h-10">
-                        <a href="https://linkedin.com/in/vincent-edeh" target="_blank">
+                        <a href="https://linkedin.com/in/vincent-edeh" target="_blank" rel="noreferrer">
 
                             <img src="/linkedin.png" alt="" className="h-full w-auto" />
                         </a>

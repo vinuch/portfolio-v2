@@ -87,8 +87,8 @@ export default function Projects() {
 
           <div className="flex flex-wrap justify-around flex-wrap my-12 md:w-10/12 mx-auto">
             {
-              projects.map(item => (
-                <div className="md:w-5/12 m-4 p-5 border border-gray1 rounded-xl">
+              projects.map((item, idx) => (
+                <div key={idx} className="md:w-5/12 m-4 p-5 border border-gray1 rounded-xl">
                   <div className="bg-gray2 w-full rounded-md overflow-hidden">
                   <img src={`/${item.img}`} alt=""  className="object-cover object-center" />
 
