@@ -6,7 +6,9 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
-        '30p': "30%"
+        '30p': "30%",
+        '30rem': "30rem",
+        '75p': "75%",
       },
       colors: {
         primary: '#AD3838',

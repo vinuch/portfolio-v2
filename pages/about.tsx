@@ -1,7 +1,67 @@
-import React from 'react'
 
-export default function about() {
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
+import DefaultLayout from "../layouts/DefaultLayout";
+import AboutBanner from "../components/AboutBanner";
+
+
+export default function About() {
   return (
-    <div>about</div>
-  )
+    <DefaultLayout>
+      <div className={`${styles.container} h-100 `}>
+        <AboutBanner />
+        <p className="md:w-7/12 text-lg mx-auto text-justify pb-24">
+          Hi, I’m Ifedili Onyegbu, Software Engineer currently based in Nigeria and I love what I do. In all my years as a Developer and Designer I've craved to reconnect with craftsmanship, to make well designed and efficent systems. <br /><br />
+
+          I started my career as a freelance designer where I built my fundamentals in the design space. Then I went on to do Frontend development with Angular and then Mobile development with Ionic framework. Right now I'm building Web2/3 applications with NodeJS and Solidity as a Backend and Smart Contract Engineer. <br /> <br />
+
+          I'm currently exploring the Web3 space hoping to make a full switch. And on the side I'm also playing around with Golang <br /><br />
+
+          I'm thrilled by design and logic; and I solve problems for fun. When I'm not working I'm either playing badminton 🏸, whipping my friends on FIFA 🎮, sharing memes 🤡, doing some art work 🎨 or working out at the gym 🏋🏽‍♂️. <br /> <br />
+
+          Because I'm a huge Angular fan ❤️ this site was built with Angular and without any CSS/animation libraries.
+
+
+        </p>
+
+        <h2 className="text-center text-2xl font-extrabold"><span className="border-b-4 border-primary">Exper</span>ience</h2>
+
+        <ul className="md:w-9/12 mx-auto my-24">
+          <li className="relative">
+            <img src="/tie.png" alt="" className="h-48 md:h-36 absolute left-0 top-0" />
+            <div className="h- mt-8 y- ml-8 border border-gray2 py-3 px-4 rounded-md">
+              <h2 className="text-base font-extrabold mb-4">Intern Backend Engineer/DevOps - HNG Internship</h2>
+              <span>May 2019 - Jun 2020</span>
+              <p>I built and deployed dockerized server-side applications and microservices on AWS.</p>
+            </div>
+          </li>
+          <li className="relative">
+            <img src="/tie.png" alt="" className="h-48 md:h-36 absolute left-0 top-0" />
+            <div className="h- mt-8 y- ml-8 border border-gray2 py-3 px-4 rounded-md">
+              <h2 className="text-base font-extrabold mb-4">Intern Backend Engineer/DevOps - HNG Internship</h2>
+              <span>May 2019 - Jun 2020</span>
+              <p>I built and deployed dockerized server-side applications and microservices on AWS.</p>
+            </div>
+          </li>
+          <li className="relative">
+            <img src="/tie.png" alt="" className="h-48 md:h-36 absolute left-0 top-0" />
+            <div className="h- mt-8 y- ml-8 border border-gray2 py-3 px-4 rounded-md">
+              <h2 className="text-base font-extrabold mb-4">Intern Backend Engineer/DevOps - HNG Internship</h2>
+              <span>May 2019 - Jun 2020</span>
+              <p>I built and deployed dockerized server-side applications and microservices on AWS.</p>
+            </div>
+          </li>
+          <li className="relative">
+            <img src="/tie.png" alt="" className="h-48 md:h-36 absolute left-0 top-0" />
+            <div className=" mt-8 y- ml-8 border border-gray2 py-3 px-4 rounded-md">
+              <h2 className="text-base font-extrabold mb-4">Intern Backend Engineer/DevOps - HNG Internship</h2>
+              <span>May 2019 - Jun 2020</span>
+              <p>I built and deployed dockerized server-side applications and microservices on AWS.</p>
+            </div>
+          </li>
+        
+        </ul>
+      </div>
+    </DefaultLayout>
+  );
 }
