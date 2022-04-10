@@ -26,7 +26,7 @@ export default function AboutBanner() {
             <div className="absolute top-0 left-0 right-0 bg- w-screen h-screen bg-contain banner z-0 pt-24 px-8" >
                 <h2 className="text-center text-2xl font-extrabold"><span className="border-b-4 border-primary">Abou</span>t me</h2>
 
-                <div className="z-30 flex items-center justify-center h-5/6 ">
+                <div className="z-30 flex items-center justify-center h-5/6 overflow-x-hidden">
                     <div className="absolute md:relative w-10/12 md:w-3/12 img-left h-64 md:h-30rem border-2 border-gray1 bg-gray2 rounded-xl overflow-hidden translate-x-6" style={{ transform: 'rotate(-14deg)' }}>
                         <img src="/pic4.jpg" alt="" className="w-full h-full object-cover object-center" />
 
