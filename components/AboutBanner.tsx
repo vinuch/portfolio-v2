@@ -7,8 +7,8 @@ export default function AboutBanner() {
         // gsap.set(containerRef.current, { autoAlpha: 0, duration: 2 });
         gsap
             .timeline()
-            .fromTo('.img-left', { rotate: 0, x: 405, y: -48 }, { x: 0, y: 0, rotate: -14 })
-            .fromTo('.img-right', { rotate: 0, x: -405, y: -48 }, { x: 0, y: 0, rotate: 14 }, 0)
+            .fromTo('.img-left', { rotate: 0, x:"25vw", y: -48 }, { x: 0, y: 0, rotate: -14 })
+            .fromTo('.img-right', { rotate: 0, x: "-25vw", y: -48 }, { x: 0, y: 0, rotate: 14 }, 0)
         // .fromTo('.bracket', { y: 1000 }, { y: 0 })
         // .fromTo('.bracket', { delay: 2, x: -150, duration: 2 }, { x: 0 })
         // // .to('.bracket', {x: 0, duration: 2,})
@@ -23,7 +23,7 @@ export default function AboutBanner() {
     }, [])
     return (
         <div className="h-screen ">
-            <div className="absolute top-0 left-0 right-0 bg- w-screen h-screen bg-contain banner z-0 pt-24 px-8" >
+            <div className="absolute top-0 left-0 right-0 bg- w-screen h-screen bg-contain banner z-0 pt-24 px-8 overflow-x-hidden" >
                 <h2 className="text-center text-2xl font-extrabold"><span className="border-b-4 border-primary">Abou</span>t me</h2>
 
                 <div className="z-30 flex items-center justify-center h-5/6 overflow-x-hidden">
