@@ -11,6 +11,14 @@ export default function DefaultLayout({ children }) {
     const containerRef = useRef();
     useEffect(() => {
         // gsap.set(containerRef.current, { autoAlpha: 1 });
+        // if (!loaded) {
+            setTimeout(() => {
+                setLoaded(true)
+
+            }, 0);
+        // }else {
+        //     setLoaded(true)
+        // }
 
         window.onload = () => {
             gsap.set(containerRef.current, { autoAlpha: 0, duration: 2 });
@@ -31,10 +39,6 @@ export default function DefaultLayout({ children }) {
                 .fromTo('.img-right', { rotate: 0, x: -405, y: -48 }, { x: 0, y: 0, rotate: 14 }, 4)
                 .fromTo('.banner-photo', { width: 0 }, { width: "100%" }, 4)
 
-                setTimeout(() => {
-                    setLoaded(true)
-    
-                }, 10000);
             // setloading(false)
 
         }
