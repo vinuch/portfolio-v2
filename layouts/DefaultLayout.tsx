@@ -10,7 +10,7 @@ export default function DefaultLayout({ children }) {
     const [loading, setloading] = useState(false);
     const containerRef = useRef();
     useEffect(() => {
-        gsap.set(containerRef.current, { autoAlpha: 0, duration: 2 });
+        gsap.set(containerRef.current, { autoAlpha: 1 });
 
         window.onload = () => {
 // setloading(true)
