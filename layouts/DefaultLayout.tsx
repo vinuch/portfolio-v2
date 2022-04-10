@@ -18,11 +18,11 @@ export default function DefaultLayout({ children }) {
                 .timeline()
                 .to('.loader', { autoAlpha: 1 })
                 .fromTo('.bracket', { y: 1000 }, { y: 0 })
-                .fromTo('.bracket', { delay: 2, x: "-10vw", duration: 2 }, { x: 0 })
+                .fromTo('.bracket', { delay: 2, x: "-20vw", duration: 2 }, { x: 0 })
                 // .to('.bracket', {x: 0, duration: 2,})
                 .fromTo('.vince', { x: 80, autoAlpha: 0, duration: 2 }, { x: 0, autoAlpha: 1 }, 1)
                 .to('.vince', { autoAlpha: 0, })
-                .to('.bracket', { x: "-10vw", duration: 1 })
+                .to('.bracket', { x: "-20vw", duration: 1 })
 
                 .to('.bracket', { x: "-50vw", y: "-45vh", duration: 1, scale: 0.2 })
                 .to('.loader', { autoAlpha: 0 }, 3.5)
@@ -31,7 +31,10 @@ export default function DefaultLayout({ children }) {
                 .fromTo('.img-right', { rotate: 0, x: -405, y: -48 }, { x: 0, y: 0, rotate: 14 }, 4)
                 .fromTo('.banner-photo', { width: 0 }, { width: "100%" }, 4)
 
-            setLoaded(true)
+            setTimeout(() => {
+                setLoaded(true)
+
+            }, 6000);
             // setloading(false)
 
         }
