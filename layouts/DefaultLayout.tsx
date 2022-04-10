@@ -52,7 +52,7 @@ export default function DefaultLayout({ children }) {
 
             </div>
         
-                    <div className="invisible contain" ref={containerRef}>
+                    <div style={{visibility: 'hidden'}} className="invisible contain" ref={containerRef}>
 
                         <Nav />
                         <div className="z-20">
