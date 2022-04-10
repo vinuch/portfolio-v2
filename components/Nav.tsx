@@ -14,7 +14,7 @@ export default function Nav() {
                 <li className="cursor-pointer"> <Link href="/projects">
                     <a>projects</a>
                 </Link></li>
-                <li className="cursor-pointer"> <a target="_blank" rel="noreferrer" href="https://vince.hashnode.dev">blog</a>
+                <li className="cursor-pointer"> <a target="_blank" rel="noreferrer" href="https://dev-vince.hashnode.dev/blog">blog</a>
 
                 </li>
 
@@ -45,7 +45,7 @@ export default function Nav() {
                             <li className="cursor-pointer my-16" onClick={() => { setshowMenu(false) }}> <Link href="/projects">
                                 <a>projects</a>
                             </Link></li>
-                            <li className="cursor-pointer my-16" onClick={() => { setshowMenu(false) }}> <a target="_blank" rel="noreferrer" href="https://vince.hashnode.dev">blog</a>
+                            <li className="cursor-pointer my-16" onClick={() => { setshowMenu(false) }}> <a target="_blank" rel="noreferrer" href="https://dev-vince.hashnode.dev/blog">blog</a>
 
                             </li>
 
