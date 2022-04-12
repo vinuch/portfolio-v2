@@ -34,6 +34,7 @@ export default function Loader() {
             .to('.vince', { autoAlpha: 0, })
             // .to('.bracket', { x: "-10vw", duration: 1 })
              .to('.bracket', { x: "-50vw", y: "-45vh", duration: 1, scale: 0.2 })
+             .to('.loader', { autoAlpha: 0 })
                 // .to('.loader', { autoAlpha: 0 }, 3.5)
                 
 
