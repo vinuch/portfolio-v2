@@ -90,8 +90,8 @@ export default function Loader() {
             </svg>
         </div>
 
-        <div className=" h-auto w-24">
-            <svg className="bracket h-full w-full" viewBox="0 0 114 157" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div className=" h-auto w-24 bracket">
+            <svg className=" h-full w-full" viewBox="0 0 114 157" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.3538 9.16329C24.4965 -0.836662 45.5 2 45.5 2V17.5C45.5 17.5 27.5 19.5 22 27.5C16.5 35.5 7.07909 23.5482 17.3538 9.16329Z" fill="#AD3838" />
                 <path d="M97 9.5C89.6875 -0.696343 68.9999 2 68.9999 2V17.5C68.9999 17.5 86.9159 19.2227 92.5466 27.3798C98.1774 35.5369 107.519 24.1674 97 9.5Z" fill="#AD3838" />
                 <path d="M17.6966 148.317C25.0091 158.513 45.5 156 45.5 156V139.5C45.5 139.5 28.084 137.777 22.4533 129.62C16.8225 121.463 7.17766 133.65 17.6966 148.317Z" fill="#AD3838" />
