@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import DefaultLayout from '../layouts/DefaultLayout'
 export default function Projects() {
 
-  const [projects, setprojects] = useState([{
+  const projects = [{
     "title": "Sportpunch Bet",
     "description": "This is a blockchain powered betting platform built with Nuxt and tailwindcss. In this project, I lead efforts on the frontend which involved UI implementation, handling mobile responsiveness and other frontend optimization efforts. I setup and managed the frontend deployment environment using AWS s3 and cloudfront, I also worked along side the backend developer, project manager and product owners to deliver on this project ",
     "link": "https://sportpunct.bet",
@@ -74,10 +74,10 @@ export default function Projects() {
     "description": "This was an interesting project I worked on for a job application that involved using the github graphql api, HTML and CSS to clone the github profiles page it is also responsive ",
     "link": "https://gh-repositoriesclone.netlify.app",
     "img": "github.png",
-    "tools": ["HTML", "CSS", "Javascript"]
+    "tools": ["HTML", "CSS", "Javascript", "graphql"]
   }
 
-  ])
+  ]
   return (
     <DefaultLayout >
       <div className="min-h-screen">
@@ -88,17 +88,21 @@ export default function Projects() {
           <div className="flex flex-wrap justify-around flex-wrap my-12 md:w-10/12 mx-auto">
             {
               projects.map((item, idx) => (
-                <div key={idx} className="md:w-5/12 m-4 p-5 border border-gray1 rounded-xl">
+                <div key={idx} className="relative  md:w-5/12 m-4 p-5 border border-gray1 rounded-xl">
                   <div className="bg-gray2 w-full rounded-md overflow-hidden">
                   <img src={`/${item.img}`} alt=""  className="object-cover object-center" />
 
                   </div>
                   <h3 className="font-bold text-xl md:text-2xl my-4">{item.title}</h3>
-                  <p className="tracking-wider text-sm">{item.description}</p>
-                  <div className="flex mt-3">
-                    <span className="w-24 h-8 rounded-full bg-gray2 mr-3"></span>
-                    <span className="w-24 h-8 rounded-full bg-gray2 mr-3"></span>
-                    <span className="w-24 h-8 rounded-full bg-gray2 mr-3"></span>
+                  <p className="tracking-wider text-sm mb-10">{item.description}</p>
+                  <div className="flex mt-3 absolute bottom-2">
+                    {
+                      item.tools.map(item => (
+                        <span className="w-24 h-8 rounded-full bg-gray2 mr-3 py-1 text-center">{item}</span>
+
+                      ))
+                    }
+                  
                   </div>
                 </div>
               ))

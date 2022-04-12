@@ -30,35 +30,27 @@ export default function About() {
           <li className="relative">
             <img src="/tie.png" alt="" className="h-48 md:h-36 absolute left-0 top-0" />
             <div className="h- mt-8 y- ml-8 border border-gray2 py-3 px-4 rounded-md">
-              <h2 className="text-base font-extrabold mb-4">Intern Backend Engineer/DevOps - HNG Internship</h2>
-              <span>May 2019 - Jun 2020</span>
-              <p>I built and deployed dockerized server-side applications and microservices on AWS.</p>
+              <h2 className="text-base font-extrabold mb-4">Sterling Bank </h2>
+              <span>Sept 2021 - Present</span>
+       
+           
             </div>
           </li>
           <li className="relative">
             <img src="/tie.png" alt="" className="h-48 md:h-36 absolute left-0 top-0" />
             <div className="h- mt-8 y- ml-8 border border-gray2 py-3 px-4 rounded-md">
-              <h2 className="text-base font-extrabold mb-4">Intern Backend Engineer/DevOps - HNG Internship</h2>
-              <span>May 2019 - Jun 2020</span>
-              <p>I built and deployed dockerized server-side applications and microservices on AWS.</p>
+              <h2 className="text-base font-extrabold mb-4">Emergency Response Africa (ERA)</h2>
+              <span>November 2021 - Present</span>
             </div>
           </li>
           <li className="relative">
             <img src="/tie.png" alt="" className="h-48 md:h-36 absolute left-0 top-0" />
             <div className="h- mt-8 y- ml-8 border border-gray2 py-3 px-4 rounded-md">
-              <h2 className="text-base font-extrabold mb-4">Intern Backend Engineer/DevOps - HNG Internship</h2>
-              <span>May 2019 - Jun 2020</span>
-              <p>I built and deployed dockerized server-side applications and microservices on AWS.</p>
+              <h2 className="text-base font-extrabold mb-4">Leyyow</h2>
+              <span>February 2021 - Present</span>
             </div>
           </li>
-          <li className="relative">
-            <img src="/tie.png" alt="" className="h-48 md:h-36 absolute left-0 top-0" />
-            <div className=" mt-8 y- ml-8 border border-gray2 py-3 px-4 rounded-md">
-              <h2 className="text-base font-extrabold mb-4">Intern Backend Engineer/DevOps - HNG Internship</h2>
-              <span>May 2019 - Jun 2020</span>
-              <p>I built and deployed dockerized server-side applications and microservices on AWS.</p>
-            </div>
-          </li>
+        
 
         </ul>
       </div>

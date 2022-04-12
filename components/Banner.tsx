@@ -21,7 +21,7 @@ export default function Banner() {
                     <div className="md:w-5/12 -mt-44">
                         <h2 className="text-3xl md:text-4xl font-extrabold tracking-wide">Edeh Vincent</h2>
 
-                        <h2 className="text-primary text-3xl md:text-5xl my-4 md:my-8 font-extrabold">Software Engineer;</h2>
+                        <h2 className="text-primary text-3xl md:text-5xl my-4 md:my-8 font-extrabold"> Software Engineer;</h2>
                         <p className="text-base md:text-lg tracking-wide leading-relaxed text-gray1">I&apos;m a Software Engineer currently based in Nigeria with 4+ years of professional experience in ideating, designing, building and delivering end to end solutions for digital products.building and delivering end to end solutions for digital products.</p>
                     </div>
 

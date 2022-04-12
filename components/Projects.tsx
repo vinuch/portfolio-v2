@@ -1,15 +1,59 @@
 import React from 'react'
 import Link from 'next/link'
 export default function Projects() {
+    const projects = [{
+        "title": "Sportpunch Bet",
+        "description": "This is a blockchain powered betting platform built with Nuxt and tailwindcss. In this project, I lead efforts on the frontend which involved UI implementation, handling mobile responsiveness and other frontend optimization efforts. I setup and managed the frontend deployment environment using AWS s3 and cloudfront, I also worked along side the backend developer, project manager and product owners to deliver on this project ",
+        "link": "https://sportpunct.bet",
+        "img": "sportpunch.png",
+        "tools": ["Nuxt", "tailwindcss", "AWS S3"]
+      },
+ 
+      {
+        "title": "Bleautech Website",
+        "description": "Bleautech is a development agency based in owerri, Nigeria where I sometimes contract for, i recently helped develop their website and blog with ReactJS and tailwindCSS ",
+        "link": "https://bleautech.org/",
+        "img": "bleautech.png",
+        "tools": ["ReactJS", "tailwindCSS"]
+      },
+      
+      {
+        "title": "Sony Studios Movie listing app",
+        "description": "This project was the capstone project i built for my Udacity Fullstack developer nanodegree where i used vueJS and python(Flask) to develop a CRUD movie listing app with Role based access control implemented courtsey of Auth0",
+        "link": "https://casting-app.netlify.app",
+        "img": "sonyStudio.png",
+        "tools": ["VueJs", "Flask", "Auth0"]
+      },
+      
+    
+      ]
     return (
 
         <div className="aboslute h-full  top-0 bg- w-100 bg-contain bg-repeat banner h-100 z-0 " >
             <div className="py-24 md:px-12">
                 <h2 className="text-center text-2xl font-extrabold"><span className="border-b-4 border-primary">Pro</span>jects</h2>
-                <div className="flex flex-wrap justify-between py-16">
-                    <div className="border border-black rounded-lg h-56 mb-4 md:h-96 md:w-30p w-full"></div>
-                    <div className="border border-black rounded-lg h-56 mb-4 md:h-96 md:w-30p w-full"></div>
-                    <div className="border border-black rounded-lg h-56 mb-4 md:h-96 md:w-30p w-full"></div>
+                <div className="flex flex-wrap md:flex-nowrap justify-between py-16">
+                {
+              projects.map((item, idx) => (
+                <div key={idx} className="relative  md:w-4/12 md:m-4 my-4 p-5 border border-gray1 rounded-xl">
+                  <div className="bg-gray2 w-full rounded-md overflow-hidden">
+                  <img src={`/${item.img}`} alt=""  className="object-cover object-center" />
+
+                  </div>
+                  <h3 className="font-bold text-xl md:text-2xl my-4">{item.title}</h3>
+                  <p className="tracking-wider text-sm mb-10">{item.description}</p>
+                  <div className="flex mt-3 absolute bottom-3">
+                    {
+                      item.tools.map(item => (
+                        <span className="px-2 text-sm md:text-base md:px-6 rounded-full bg-gray2 mr-3 py-1 text-center">{item}</span>
+
+                      ))
+                    }
+                  
+                  </div>
+                </div>
+              ))
+            }
                 </div>
                 <div className="flex justify-center">
                     <Link href="/projects">
