@@ -97,8 +97,8 @@ export default function Projects() {
                   <p className="tracking-wider text-sm mb-10">{item.description}</p>
                   <div className="flex mt-3 absolute bottom-2">
                     {
-                      item.tools.map(item => (
-                        <span className="w-24 h-8 rounded-full bg-gray2 mr-3 py-1 text-center">{item}</span>
+                      item.tools.map((item, idx) => (
+                        <span key={idx} className="w-24 h-8 rounded-full bg-gray2 mr-3 py-1 text-center">{item}</span>
 
                       ))
                     }
