@@ -18,7 +18,7 @@ export default function Nav() {
 
                 </li>
 
-                <li className="cursor-pointer">contact</li>
+                {/* <li className="cursor-pointer">contact</li> */}
             </ul>
             <button className="md:hidden" onClick={() => setshowMenu(!showMenu)}>
                 {
@@ -49,7 +49,7 @@ export default function Nav() {
 
                             </li>
 
-                            <li className="cursor-pointer my-16" onClick={() => { setshowMenu(false) }}>contact</li>
+                            {/* <li className="cursor-pointer my-16" onClick={() => { setshowMenu(false) }}>contact</li> */}
                         </ul>
                     </div>
                 )

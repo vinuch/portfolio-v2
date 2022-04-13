@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
           setTimeout(() => {
           setloading(false)
             
-          }, 8500);
+          }, 2200);
             //dom is ready, window.onload fires later
         }
     };

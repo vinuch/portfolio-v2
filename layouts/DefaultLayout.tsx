@@ -72,7 +72,7 @@ export default function DefaultLayout({ children }) {
         <div className="relative ">
        
 
-            <div style={{ visibility:'hidden' }} className="invisible contain" ref={containerRef}>
+            <div className="invisible contain" ref={containerRef}>
 
                 <Nav />
                 <div className="z-20">
