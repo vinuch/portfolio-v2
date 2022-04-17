@@ -38,6 +38,14 @@ a {
   background-image: url("/pattern.png");
 }
 
+.banner-title {
+  -webkit-text-stroke: 0.125rem #ad3838;
+  /* font-size: 5rem; */
+ 
+  line-height: 100%;
+
+}
+
 .nav {
   background: rgba(252, 252, 252, 0.5);
   backdrop-filter: blur(8px) saturate(180%);

@@ -81,34 +81,37 @@ export default function Projects() {
   return (
     <DefaultLayout >
       <div className="min-h-screen">
-        <div className="   bg- w-100 bg-contain bg-repeat banner h-100 z-0" style={{ height: '50vh' }}></div>
+        <div className=" w-100 bg-repeat banner h-100 z-0" style={{ height: '50vh' }}></div>
         <div className="absolute top-0 pt-32 h-screen overflow-y-scroll w-full md:px-10">
           <h2 className="text-center text-2xl font-extrabold"><span className="border-b-4 border-primary">Proj</span>ects  (Catalog)</h2>
 
           <div className="flex flex-wrap justify-around flex-wrap my-12 md:w-10/12 mx-auto">
             {
               projects.map((item, idx) => (
-                <div key={idx} className="relative  md:w-5/12 m-4 p-5 border border-gray1 rounded-xl">
+                <div key={idx} className="relative md:w-5/12 m-4 p-5 border border-gray1 rounded-xl">
                   <div className="bg-gray2 w-full rounded-md overflow-hidden">
-                  <img src={`/${item.img}`} alt=""  className="object-cover object-center" />
-
+                    <img src={`/${item.img}`} alt="" className="object-cover object-center" />
                   </div>
-                  <h3 className="font-bold text-xl md:text-2xl my-4">{item.title}</h3>
+                  <a href={item.link} target="_blank" rel="noreferrer" className="hover:underline">
+                    <div className="font-bold text-xl md:text-2xl my-4 flex items-center"><span className="mr-3">{item.title}</span><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg></div>
+
+                  </a>
                   <p className="tracking-wider text-sm mb-10">{item.description}</p>
-                  <div className="flex mt-3 absolute bottom-2">
+                  <div className="flex flex-wrap mt-3  bottom-">
                     {
                       item.tools.map((item, idx) => (
-                        <span key={idx} className="w-24 h-8 rounded-full bg-gray2 mr-3 py-1 text-center">{item}</span>
-
+                        <div key={idx} className="w-20 mb-3 h-8 rounded-full bg-gray2 text-xs mr-3 py-1 flex items-center justify-center text-center"><span>{item}</span></div>
                       ))
                     }
-                  
+
                   </div>
                 </div>
               ))
             }
 
-            
+
 
           </div>
 

@@ -2,11 +2,11 @@ import React from 'react'
 import Link from 'next/link'
 export default function GetInTouch() {
     return (
-        <div className="aboslute h-full  top-0 bg- w-100 bg-contain bg-repeat banner h-100 z-0 " >
+        <div className="aboslute h-full  top-0 bg- w-100 bg-repeat banner h-100 z-0 " >
 
             <div className="py-24 md:px-12">
                 <h2 className="text-center text-2xl font-extrabold"><span className="border-b-4 border-primary">Get</span> in  touch</h2>
-                <p className="text-center my-8 md:w-6/12 mx-auto text-lg">You have an awesome idea you want me to jump on? Feel free to contact me. However, if you have other request or question, I&apos;m still up for it.</p>
+                <p className="text-center my-8 lg:w-6/12 mx-auto text-lg">You have an awesome idea you want me to jump on? Feel free to contact me. However, if you have other request or question, I&apos;m still up for it.</p>
                 <div className="flex justify-around items-center w-6/12 md:w-2/12 mx-auto my-12">
                     <div className="rounded-full w-10 h-10">
                         <a href="https://github.com/vinuch" target="_blank" rel="noreferrer">

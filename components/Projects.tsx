@@ -29,23 +29,29 @@ export default function Projects() {
       ]
     return (
 
-        <div className="aboslute h-full  top-0 bg- w-100 bg-contain bg-repeat banner h-100 z-0 " >
+        <div className="aboslute h-full top-0 bg- w-100 bg-repeat banner h-100 z-0 " >
             <div className="py-24 md:px-12">
                 <h2 className="text-center text-2xl font-extrabold"><span className="border-b-4 border-primary">Pro</span>jects</h2>
-                <div className="flex flex-wrap md:flex-nowrap justify-between py-16">
+                <div className="flex flex-wrap lg:flex-nowrap justify-between py-16">
                 {
               projects.map((item, idx) => (
-                <div key={idx} className="relative  md:w-4/12 md:m-4 my-4 p-5 border border-gray1 rounded-xl">
+                <div key={idx} className="relative  lg:w-4/12 md:m-4 my-4 p-5 border border-gray1 rounded-xl">
                   <div className="bg-gray2 w-full rounded-md overflow-hidden">
                   <img src={`/${item.img}`} alt=""  className="object-cover object-center" />
 
                   </div>
-                  <h3 className="font-bold text-xl md:text-2xl my-4">{item.title}</h3>
+                  <a href={item.link} target="_blank" rel="noreferrer" className="hover:underline">
+                    <div className="font-bold text-xl md:text-2xl my-4 flex items-center"><span className="mr-3">{item.title}</span><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg></div>
+
+                  </a>
                   <p className="tracking-wider text-sm mb-10">{item.description}</p>
-                  <div className="flex mt-3 absolute bottom-3">
+                  <div className="flex flex-wrap mt-3 absolute bottom-3">
                     {
                       item.tools.map((item, idx) => (
-                        <span key={idx} className="px-2 text-sm md:text-base md:px-6 rounded-full bg-gray2 mr-3 py-1 text-center">{item}</span>
+                        // <span key={idx} className="px-8 py-2 text-xs md:text-base md:px-6 rounded-full bg-gray2 mr-3 py-1 text-center">{item}</span>
+                        <div key={idx} className="w-20 mb-3 h-8 rounded-full bg-gray2 text-xs mr-3 py-1 flex items-center justify-center text-center"><span>{item}</span></div>
 
                       ))
                     }

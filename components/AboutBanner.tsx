@@ -23,7 +23,7 @@ export default function AboutBanner() {
     }, [])
     return (
         <div className="h-screen ">
-            <div className="absolute top-0 left-0 right-0 bg- w-screen h-screen bg-contain banner z-0 pt-24 px-8 overflow-x-hidden" >
+            <div className="absolute top-0 left-0 right-0 bg- w-screen h-screen bg-repeat banner z-0 pt-24 px-8 overflow-x-hidden" >
                 <h2 className="text-center text-2xl font-extrabold"><span className="border-b-4 border-primary">Abou</span>t me</h2>
 
                 <div className="z-30 flex items-center justify-center h-5/6 overflow-x-hidden">
