@@ -16,7 +16,7 @@ export default function Banner() {
                 <div className="z-30 flex  flex-wrap-reverse items-center  lg:justify-around md:h-full ">
                     <div className="lg:w-5/12 w-full h-50vh lg:h-70vh">
                         <div className="w-full h-full rounded-md banner-photo bg-gray1 overflow-hidden my-8">
-                            <img src="/pic1.jpg" alt="" className="w-full h-full object-cover object-center" />
+                            <img src="/pic6.jpg" alt="" className="w-full h-full object-cover object-center" />
                         </div>
                     </div>
                     <div className="lg:w-5/12 ">

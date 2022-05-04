@@ -2,12 +2,12 @@ import React from 'react'
 import Link from 'next/link'
 export default function Projects() {
     const projects = [{
-        "title": "Sportpunch Bet",
-        "description": "This is a blockchain powered betting platform built with Nuxt and tailwindcss. In this project, I lead efforts on the frontend which involved UI implementation, handling mobile responsiveness and other frontend optimization efforts. I setup and managed the frontend deployment environment using AWS s3 and cloudfront, I also worked along side the backend developer, project manager and product owners to deliver on this project ",
-        "link": "https://sportpunct.bet",
-        "img": "sportpunch.png",
-        "tools": ["Nuxt", "tailwindcss", "AWS S3"]
-      },
+      "title": "This or that polling",
+      "description": "This-or-That is a decentralized polling project where anyone can create polls and have other people vote in favour of one option or the other. The frontend is built with nextJS and typescript, smartcontract in assemblyscript on the NEAR protocol",
+      "link": "https://this-or-that-dapp.vercel.app/",
+      "img": "thisorthat.png",
+      "tools": ["NextJs", "tailwindcss", "AssemblyScript", "NEAR Protocol"]
+    },
  
       {
         "title": "Bleautech Website",
@@ -51,7 +51,7 @@ export default function Projects() {
                     {
                       item.tools.map((item, idx) => (
                         // <span key={idx} className="px-8 py-2 text-xs md:text-base md:px-6 rounded-full bg-gray2 mr-3 py-1 text-center">{item}</span>
-                        <div key={idx} className="w-20 mb-3 h-8 rounded-full bg-gray2 text-xs mr-3 py-1 flex items-center justify-center text-center"><span>{item}</span></div>
+                        <div key={idx} className="min-w-20 w-auto px-4 mb-3 h-8 rounded-full bg-gray2 text-xs mr-3 py-1 flex items-center justify-center text-center"><span>{item}</span></div>
 
                       ))
                     }

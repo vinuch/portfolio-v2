@@ -3,6 +3,51 @@ import DefaultLayout from '../layouts/DefaultLayout'
 export default function Projects() {
 
   const projects = [{
+    "title": "This or that polling",
+    "description": "This-or-That is a decentralized polling project where anyone can create polls and have other people vote in favour of one option or the other. The frontend is built with nextJS and typescript, smartcontract in assemblyscript on the NEAR protocol",
+    "link": "https://this-or-that-dapp.vercel.app/",
+    "img": "thisorthat.png",
+    "tools": ["NextJs", "tailwindcss", "AssemblyScript", "NEAR Protocol"]
+  },
+  {
+    "title": "Sony Studios Movie listing app",
+    "description": "This project was the capstone project i built for my Udacity Fullstack developer nanodegree where i used vueJS and python(Flask) to develop a CRUD movie listing app with Role based access control implemented courtsey of Auth0",
+    "link": "https://casting-app.netlify.app",
+    "img": "sonyStudio.png",
+    "tools": ["VueJs", "Flask", "Auth0"]
+  },
+  {
+    "title": "Bleautech Website",
+    "description": "Bleautech is a development agency based in owerri, Nigeria where I sometimes contract for, i recently helped develop their website and blog with ReactJS and tailwindCSS ",
+    "link": "https://bleautech.org/",
+    "img": "bleautech.png",
+    "tools": ["ReactJS", "tailwindCSS"]
+  },{
+    "title": "Github Clone",
+    "description": "This was an interesting project I worked on for a job application that involved using the github graphql api, HTML and CSS to clone the github profiles page it is also responsive ",
+    "link": "https://gh-repositoriesclone.netlify.app",
+    "img": "github.png",
+    "tools": ["HTML", "CSS", "Javascript", "graphql"]
+  }, {
+    "title": "Unsplash Clone",
+    "description": "This is a basic clone of the unsplash stock image website that uses the unsplash developer api and VueJS",
+    "link": "https://vince-unsplash-clone.netlify.app",
+    "img": "unsplash.png",
+    "tools": ["VueJs"]
+  },
+  {
+    "title": "Tega's Portfolio site ",
+    "description": "This is a landing page i developed for Tega a product designer in my network, I use vueJS and GSAP3 on this project",
+    "link": "https://tegaportfolio.netlify.app",
+    "img": "chrisfolio.png",
+    "tools": ["VueJs", "GSAP"]
+  },{
+    "title": "My Portfolio site ",
+    "description": "This portfolio website/blog was built with Gridsome, an opportunity to understand and work with the vueJS static site generator, its graphql data layer and alot more ",
+    "link": "https://devince.tech",
+    "img": "portfolio.png",
+    "tools": ["Gridsome", "netlifyCMS", "tailwindcss"]
+  },{
     "title": "Sportpunch Bet",
     "description": "This is a blockchain powered betting platform built with Nuxt and tailwindcss. In this project, I lead efforts on the frontend which involved UI implementation, handling mobile responsiveness and other frontend optimization efforts. I setup and managed the frontend deployment environment using AWS s3 and cloudfront, I also worked along side the backend developer, project manager and product owners to deliver on this project ",
     "link": "https://sportpunct.bet",
@@ -28,54 +73,14 @@ export default function Projects() {
     "img": "invoice.png",
     "tools": ["Nuxt", "NodeJs"]
   },
-  {
-    "title": "Bleautech Website",
-    "description": "Bleautech is a development agency based in owerri, Nigeria where I sometimes contract for, i recently helped develop their website and blog with ReactJS and tailwindCSS ",
-    "link": "https://bleautech.org/",
-    "img": "bleautech.png",
-    "tools": ["ReactJS", "tailwindCSS"]
-  },
-  {
-    "title": "Tega's Portfolio site ",
-    "description": "This is a landing page i developed for Tega a product designer in my network, I use vueJS and GSAP3 on this project",
-    "link": "https://tegaportfolio.netlify.app",
-    "img": "chrisfolio.png",
-    "tools": ["VueJs", "GSAP"]
-  },
-  {
-    "title": "My Portfolio site ",
-    "description": "This portfolio website/blog was built with Gridsome, an opportunity to understand and work with the vueJS static site generator, its graphql data layer and alot more ",
-    "link": "https://devince.tech",
-    "img": "portfolio.png",
-    "tools": ["Gridsome", "netlifyCMS", "tailwindcss"]
-  },
-  {
-    "title": "Sony Studios Movie listing app",
-    "description": "This project was the capstone project i built for my Udacity Fullstack developer nanodegree where i used vueJS and python(Flask) to develop a CRUD movie listing app with Role based access control implemented courtsey of Auth0",
-    "link": "https://casting-app.netlify.app",
-    "img": "sonyStudio.png",
-    "tools": ["VueJs", "Flask", "Auth0"]
-  }, {
+   {
     "title": "Supreme Fire consult Website (WIP)",
     "description": "",
     "link": "https://supremefireconsult.com/",
     "img": "primefire.png",
     "tools": ["Nuxt"]
-  },
-  {
-    "title": "Unsplash Clone",
-    "description": "This is a basic clone of the unsplash stock image website that uses the unsplash developer api and VueJS",
-    "link": "https://vince-unsplash-clone.netlify.app",
-    "img": "unsplash.png",
-    "tools": ["VueJs"]
-  },
-  {
-    "title": "Github Clone",
-    "description": "This was an interesting project I worked on for a job application that involved using the github graphql api, HTML and CSS to clone the github profiles page it is also responsive ",
-    "link": "https://gh-repositoriesclone.netlify.app",
-    "img": "github.png",
-    "tools": ["HTML", "CSS", "Javascript", "graphql"]
   }
+  
 
   ]
   return (
@@ -102,7 +107,7 @@ export default function Projects() {
                   <div className="flex flex-wrap mt-3  bottom-">
                     {
                       item.tools.map((item, idx) => (
-                        <div key={idx} className="w-20 mb-3 h-8 rounded-full bg-gray2 text-xs mr-3 py-1 flex items-center justify-center text-center"><span>{item}</span></div>
+                        <div key={idx} className="min-w-20 w-auto px-4 mb-3 h-8 rounded-full bg-gray2 text-xs mr-3 py-1 flex items-center justify-center text-center"><span>{item}</span></div>
                       ))
                     }
 
