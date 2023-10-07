@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <Suspense fallback={<Loader />}>
       <DefaultLayout>
-        <div className={`${styles.container} h-100 `}>
+        <div className={`${styles.container} h-100 dark:bg-dark1 `}>
           <Banner />
           <TechStack />
 

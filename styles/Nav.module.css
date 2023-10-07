@@ -1,0 +1,9 @@
+button .absolute {
+  left: 0;
+  top: 0;
+}
+
+/* Set the initial width to 0 (left-to-right fill) */
+button .group-hover\:w-full {
+  width: 100%;
+}

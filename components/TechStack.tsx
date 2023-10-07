@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function TechStack() {
     return (
-        <div className="py-24">
+        <div className="py-24 px-4">
             <h2 className="text-center text-2xl font-extrabold"><span className="border-b-4 border-primary">Tec</span>h Stack</h2>
 
             <ul className="flex flex-wrap justify-around md:justify-center w-full lg:w-7/12 md:mx-auto text-base mt-8">

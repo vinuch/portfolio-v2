@@ -34,8 +34,10 @@ a {
   box-sizing: border-box;
 }
 
-.banner {
+.banner-bg {
   background-image: url("/pattern.png");
+  /* filter: blur(8px); */
+  /* -webkit-filter: blur(8px); */
 }
 
 .banner-title {
@@ -56,6 +58,11 @@ a {
   font-weight: 700;
 }
 
+html.dark .nav li:after {
+  border-bottom: solid 3px #fff;
+  /* background: red; */
+
+}
 .nav li:after {
   display: block;
   content: "";

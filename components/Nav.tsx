@@ -1,9 +1,38 @@
-import React, { useState } from 'react'
+import { useTheme } from 'next-themes'
+import React, { useEffect, useState } from 'react'
+import styles from "../styles/Home.module.css";
+
+import { MoonIcon, SunIcon } from '@heroicons/react/24/solid'
 import Link from 'next/link'
 export default function Nav() {
+    const { systemTheme, theme, setTheme } = useTheme()
     const [showMenu, setshowMenu] = useState(false)
+    const [mounted, setMounted] = useState(false)
+
+    useEffect(() => {
+      setMounted(true)
+    }, [])
+    
+
+    const renderThemeChanger = () => {
+        if (!mounted) return !null
+
+        const currentTheme = theme === 'system' ? systemTheme : theme
+
+        if (currentTheme === 'dark') {
+            return (
+                <SunIcon className="w-7 h-7" role="button" onClick={() => setTheme('light')} />
+            )
+        }
+        else {
+            return (
+                <MoonIcon className="w-7 h-7" role="button" onClick={() => setTheme('dark')} />
+            )
+        }
+    }
+
     return (
-        <div className="py-4 px-8 bg-white nav flex justify-between items-center sticky top-0 left-0 right-0 z-50">
+        <div className="py-4 px-8 bg-white dark:bg-primary2 nav flex justify-between items-center sticky top-0 left-0 right-0 z-50">
             <Link passHref href="/"><img src="/logo.svg" alt="" className="w-20 md:w-24 cursor-pointer" /></Link>
 
             <ul className="hidden md:flex justify-around w-4/12 text-lg">
@@ -17,7 +46,10 @@ export default function Nav() {
                 <li className="cursor-pointer"> <a target="_blank" rel="noreferrer" href="https://dev-vince.hashnode.dev/blog">blog</a>
 
                 </li>
+                <li>
 
+                    {renderThemeChanger()}
+                </li>
                 {/* <li className="cursor-pointer">contact</li> */}
             </ul>
             <button className="md:hidden" onClick={() => setshowMenu(!showMenu)}>
@@ -37,7 +69,7 @@ export default function Nav() {
 
             {
                 showMenu && (
-                    <div className="bg-primary fixed top-16 left-0 w-screen h-screen z-40 flex jutify-center items-center">
+                    <div className="bg-primary md:hidden dark:bg-primary2 fixed top-16 left-0 w-screen h-screen z-40 flex jutify-center items-center">
                         <ul className="w-full text-center text-white text-5xl">
                             <li className="cursor-pointer my-16" onClick={() => { setshowMenu(false) }}> <Link href="/about">
                                 <a>about</a>
@@ -48,7 +80,10 @@ export default function Nav() {
                             <li className="cursor-pointer my-16" onClick={() => { setshowMenu(false) }}> <a target="_blank" rel="noreferrer" href="https://dev-vince.hashnode.dev/blog">blog</a>
 
                             </li>
+                            <li className="flex justify-center">
 
+                                {renderThemeChanger()}
+                            </li>
                             {/* <li className="cursor-pointer my-16" onClick={() => { setshowMenu(false) }}>contact</li> */}
                         </ul>
                     </div>

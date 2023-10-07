@@ -15,7 +15,7 @@ export default function GetInTouch() {
                         </a>
                     </div>
                     <div className="rounded-full w-10 h-10">
-                        <a href="https://twitter.com/dev_vince_" target="_blank" rel="noreferrer">
+                        <a href="https://twitter.com/dev_vinc" target="_blank" rel="noreferrer">
 
                             <img src="/twitter.webp" alt="" className="h-full w-auto" />
                         </a>

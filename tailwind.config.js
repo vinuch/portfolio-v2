@@ -4,6 +4,7 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
     "./layouts/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       spacing: {
@@ -18,7 +19,9 @@ module.exports = {
         '4rem': '4rem',
       },
       colors: {
+        dark1: '#121212',
         primary: '#AD3838',
+        primary2: '#44312f',
         gray1: '#332A2A',
         gray2: '#E5E5E5',
       }

@@ -1,0 +1,31 @@
+
+/* Transition effect on hover */
+.button .absolute {
+  transition: all 0.5s ease-in-out;
+}
+
+.absolute {
+  left: 0;
+  top: 0;
+}
+
+/* Set the initial width to 0 (left-to-right fill) */
+button .group-hover\:w-full {
+  width: 100%;
+}
+
+.bio{
+  background-image: url("/cloud.svg");
+background-size: 100%;
+background-repeat: no-repeat;
+background-position: center;
+
+}
+.bioDark{
+  background-image: url("/cloud-dark.svg");
+background-size: 100%;
+background-repeat: no-repeat;
+background-position: center;
+
+}
+
