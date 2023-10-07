@@ -107,7 +107,7 @@ export default function Projects() {
                   <div className="flex flex-wrap mt-3  bottom-">
                     {
                       item.tools.map((item, idx) => (
-                        <div key={idx} className="min-w-20 w-auto px-4 mb-3 h-8 rounded-full bg-gray2 text-xs mr-3 py-1 flex items-center justify-center text-center"><span>{item}</span></div>
+                        <div key={idx} className="min-w-20 w-auto px-4 mb-3 h-8 rounded-full bg-gray2 dark:bg-primary2 text-xs mr-3 py-1 flex items-center justify-center text-center"><span>{item}</span></div>
                       ))
                     }
 
