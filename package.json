@@ -17,7 +17,7 @@
     "react-dom": "18.0.0"
   },
   "engines": {
-    "node": "18.x"
+    "node": "16.20.2"
   },
   "devDependencies": {
     "@types/node": "^17.0.23",
