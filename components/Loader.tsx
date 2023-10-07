@@ -27,7 +27,7 @@ export default function Loader() {
                 .to('.bracket',{ x: "-20vw", yoyo: true, duration: 0.4, ease: "power2.inOut" })
                 .to('.bracket',{ x: "0", yoyo: true, duration: 0.4, ease: "power2.inOut" })
                 .fromTo('.vince', { x: 80, autoAlpha: 0, duration: 0.5 }, { x: 0, autoAlpha: 1 }, 0.5)
-                // .to('.loader', { autoAlpha: 0, duration: 1})
+                .to('.loader', { autoAlpha: 0, duration: 1})
 
 
                 // gsap.timeline({delay: 1}).fromTo('.vince', { x: 80, autoAlpha: 0, duration: 2 }, { x: 0, autoAlpha: 1 }, 1)
