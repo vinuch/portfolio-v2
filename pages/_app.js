@@ -4,7 +4,7 @@ import "../styles/globals.css";
 import Loading from "../components/Loader";
 import { useEffect, useState } from "react";
 import { ThemeProvider } from "next-themes";
-import withLoading from "../components/WithLoading";
+import withLoading from "../components/withLoading";
 
 function MyApp({ Component, pageProps }) {
   const [loading, setloading] = useState(true);
