@@ -11,16 +11,19 @@ import Loader from "../components/Loader";
 const DefaultLayout = React.lazy(() => import("../layouts/DefaultLayout")); // Lazy-loaded
 
 export default function Home() {
+
   return (
-    <Suspense fallback={<Loader />}>
+    <Suspense>
       <DefaultLayout>
         <div className={`${styles.container} h-100 dark:bg-dark1 `}>
+        
           <Banner />
           <TechStack />
 
           <Projects />
           <GetInTouch />
         </div>
+        
       </DefaultLayout>
     </Suspense>
   );

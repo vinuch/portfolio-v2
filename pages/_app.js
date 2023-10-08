@@ -3,6 +3,7 @@ import "../styles/globals.css";
 import Loading from "../components/Loader";
 import { useEffect, useState } from "react";
 import { ThemeProvider } from "next-themes";
+import withLoading from "../components/withLoading";
 
 function MyApp({ Component, pageProps }) {
   const [loading, setloading] = useState(true);
@@ -18,16 +19,16 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-    <>
-      {loading ? (
-        <Loading />
-      ) : (
-        <ThemeProvider enableSyste={true} attribute="class">
+    // <>
+    //   {loading ? (
+    //     <Loading />
+    //   ) : (
+        // <ThemeProvider enableSyste={true} attribute="class">
           <Component {...pageProps} />
-        </ThemeProvider>
-      )}
-    </>
+        // </ThemeProvider>
+    //   )}
+    // </>
   );
 }
 
-export default MyApp;
+export default withLoading(MyApp)

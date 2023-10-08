@@ -13,9 +13,9 @@ export default function Banner() {
     useEffect(() => {
 
         // gsap.set(containerRef.current, { autoAlpha: 0, duration: 2 });
-        gsap
-            .timeline()
-            .fromTo('.banner-photo', { width: 0 }, { width: "100%" })
+        // gsap
+        //     .timeline()
+        //     .fromTo('.banner-photo', { width: 0 }, { width: "100%" })
     })
     return (
         <div className="min-h-screen ">
@@ -23,8 +23,8 @@ export default function Banner() {
                 <div className=" top-0 left-0 right-0 bg- min-w-screen min-h-screen bg-repeat banner z-0 md:pt-16 pt-8 md:px-8" >
                     <div className="z-30 flex  flex-wrap items-center  lg:justify-around md:h-full ">
                         <div className="lg:w-5/12 w-full h-50vh lg:h-70vh">
-                            <div className="w-full h-full rounded-md banner-photo bg-gray1 overflow-hidden md:my-8">
-                                <img src="/pic6.jpg" alt="" className="w-full h-full object-cover object-center" />
+                            <div className="w-full h-full rounded-md  bg-gray1 overflow-hidden md:my-8">
+                                <img src="/pic6.jpg" alt="" className="w-full  h-full object-cover object-center" />
                             </div>
                         </div>
                         <div className="lg:w-5/12 ">
