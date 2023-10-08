@@ -20,7 +20,7 @@ const withLoading = (WrappedComponent) => {
       }
     }, [loading]);
 
-    return    <ThemeProvider enableSyste={true} attribute="class"> <div>{loading ? <Loading /> : <WrappedComponent {...props} />}</div> </ThemeProvider>;
+    return    <ThemeProvider enableSyste={true} attribute="class"> <div>{ <WrappedComponent {...props} />}</div> </ThemeProvider>;
   };
 };
 
