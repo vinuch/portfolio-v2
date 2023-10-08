@@ -2,7 +2,7 @@ import { useTheme } from 'next-themes'
 import React, { useEffect, useState } from 'react'
 import styles from "../styles/Home.module.css";
 
-import { MoonIcon, SunIcon } from '@heroicons/react/24/solid'
+import { MoonIcon, SunIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid'
 import Link from 'next/link'
 export default function Nav() {
     const { systemTheme, theme, setTheme } = useTheme()
@@ -10,9 +10,9 @@ export default function Nav() {
     const [mounted, setMounted] = useState(false)
 
     useEffect(() => {
-      setMounted(true)
+        setMounted(true)
     }, [])
-    
+
 
     const renderThemeChanger = () => {
         if (!mounted) return !null
@@ -43,7 +43,7 @@ export default function Nav() {
                 <li className="cursor-pointer"> <Link href="/projects">
                     <a>projects</a>
                 </Link></li>
-                <li className="cursor-pointer"> <a target="_blank" rel="noreferrer" href="https://dev-vince.hashnode.dev/blog">blog</a>
+                <li className="cursor-pointer"> <a target="_blank" rel="noreferrer" href="https://dev-vince.hashnode.dev/blog" className="flex items-center gap-x-2"><span>blog</span> <ArrowTopRightOnSquareIcon className="w-4 h-4" /></a>
 
                 </li>
                 <li>
@@ -77,7 +77,8 @@ export default function Nav() {
                             <li className="cursor-pointer my-16" onClick={() => { setshowMenu(false) }}> <Link href="/projects">
                                 <a>projects</a>
                             </Link></li>
-                            <li className="cursor-pointer my-16" onClick={() => { setshowMenu(false) }}> <a target="_blank" rel="noreferrer" href="https://dev-vince.hashnode.dev/blog">blog</a>
+                            <li className="cursor-pointer my-16 flex justify-center" onClick={() => { setshowMenu(false) }}> <a target="_blank" rel="noreferrer" href="https://dev-vince.hashnode.dev/blog" className="flex items-center gap-x-2"><span>blog</span> <ArrowTopRightOnSquareIcon className="w-4 h-4" /></a>
+
 
                             </li>
                             <li className="flex justify-center">
