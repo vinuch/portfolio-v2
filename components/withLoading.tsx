@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 // import Loading from './Loading';
-import Loading from "../components/Loader";
 import { ThemeProvider } from "next-themes";
 
+import Loading from "./Loader";
+
 const withLoading = (WrappedComponent) => {
-  return (props) => {
+  const WrappedWithLoading = (props) => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -20,8 +21,12 @@ const withLoading = (WrappedComponent) => {
       }
     }, [loading]);
 
-    return    <ThemeProvider enableSyste={true} attribute="class"> <div>{ <WrappedComponent {...props} />}</div> </ThemeProvider>;
+    return    <ThemeProvider enableSystem={true} attribute="class"> <div>{loading ? <Loading /> : <WrappedComponent {...props} />}</div> </ThemeProvider>;
   };
+
+  WrappedWithLoading.displayName = 'Component'
+  return WrappedWithLoading;
 };
+
 
 export default withLoading;

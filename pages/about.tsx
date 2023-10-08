@@ -29,7 +29,7 @@ export default function About() {
 
         <ul className="md:w-9/12 mx-auto my-24">
           <li className="relative">
-            <img src="/tie.png" alt="" className="h-48 md:h-36 absolute left-0 top-0" />
+            {/* <img src="/tie.png" alt="" className="h-48 md:h-36 absolute left-0 top-0" /> */}
             <div className="h- mt-8 y- ml-8 border-2 border-gray2 py-3 px-4 rounded-md">
               <h2 className="text-lg font-extrabold mb-2">Sterling Bank </h2>
               <h3 className="text-base font-extrabold mb-2">Frontend Engineer</h3>
@@ -40,7 +40,7 @@ export default function About() {
             </div>
           </li>
           <li className="relative">
-            <img src="/tie.png" alt="" className="h-48 md:h-36 absolute left-0 top-0" />
+            {/* <img src="/tie.png" alt="" className="h-48 md:h-36 absolute left-0 top-0" /> */}
             <div className="h- mt-8 y- ml-8 border-2 border-gray2 py-3 px-4 rounded-md">
               <h2 className="text-lg font-extrabold mb-2">Emergency Response Africa (ERA)</h2>
               <h3 className="text-base font-extrabold mb-2">Frontend Engineer</h3>
@@ -48,7 +48,7 @@ export default function About() {
             </div>
           </li>
           <li className="relative">
-            <img src="/tie.png" alt="" className="h-48 md:h-36 absolute left-0 top-0" />
+            {/* <img src="/tie.png" alt="" className="h-48 md:h-36 absolute left-0 top-0" /> */}
             <div className="h- mt-8 y- ml-8 border-2 border-gray2 py-3 px-4 rounded-md">
               <h2 className="text-lg font-extrabold mb-2">Leyyow</h2>
               <h3 className="text-base font-extrabold mb-2">Frontend Developer</h3>
@@ -56,7 +56,7 @@ export default function About() {
             </div>
           </li>
           <li className="relative">
-            <img src="/tie.png" alt="" className="h-48 md:h-36 absolute left-0 top-0" />
+            {/* <img src="/tie.png" alt="" className="h-48 md:h-36 absolute left-0 top-0" /> */}
             <div className="h- mt-8 y- ml-8 border-2 border-gray2 py-3 px-4 rounded-md">
               <h2 className="text-lg font-extrabold mb-2">Mercator</h2>
               <h3 className="text-base font-extrabold mb-2">Fullstack Developer</h3>
@@ -65,7 +65,7 @@ export default function About() {
             </div>
           </li>
           <li className="relative">
-            <img src="/tie.png" alt="" className="h-48 md:h-36 absolute left-0 top-0" />
+            {/* <img src="/tie.png" alt="" className="h-48 md:h-36 absolute left-0 top-0" /> */}
             <div className="h- mt-8 y- ml-8 border-2 border-gray2 py-3 px-4 rounded-md">
               <h2 className="text-lg font-extrabold mb-2">Oluaka Institute</h2>
               <h3 className="text-base font-extrabold mb-2">Intern</h3>

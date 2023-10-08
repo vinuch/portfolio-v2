@@ -1,5 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
+
 export default function Projects() {
   const projects = [{
     "title": "This or that polling",
@@ -36,8 +38,8 @@ export default function Projects() {
           {
             projects.map((item, idx) => (
               <div key={idx} className="relative  lg:w-4/12 md:m-4 my-4 p-5 border border-gray1 rounded-xl">
-                <div className="bg-gray2 w-full rounded-md overflow-hidden">
-                  <img src={`/${item.img}`} alt="" className="object-cover object-center" />
+                <div className="bg-gray2 w-full h-64 relative rounded-md overflow-hidden ">
+                  <Image layout='fill' src={`/${item.img}`} alt="" className="object-cover object-center" />
 
                 </div>
                 <a href={item.link} target="_blank" rel="noreferrer" className="hover:underline">

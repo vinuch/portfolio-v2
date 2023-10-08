@@ -1,9 +1,10 @@
+/* eslint-disable react/display-name */
 import { Router } from "next/router";
 import "../styles/globals.css";
 import Loading from "../components/Loader";
 import { useEffect, useState } from "react";
 import { ThemeProvider } from "next-themes";
-import withLoading from "../components/withLoading";
+import withLoading from "../components/WithLoading";
 
 function MyApp({ Component, pageProps }) {
   const [loading, setloading] = useState(true);

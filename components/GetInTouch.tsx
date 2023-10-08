@@ -1,5 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
+
 export default function GetInTouch() {
     return (
         <div className="aboslute h-full  top-0 bg- w-100 bg-repeat banner h-100 z-0 " >
@@ -10,20 +12,26 @@ export default function GetInTouch() {
                 <div className="flex justify-around items-center w-6/12 md:w-2/12 mx-auto my-12">
                     <div className="rounded-full w-10 h-10">
                         <a href="https://github.com/vinuch" target="_blank" rel="noreferrer">
-                            <img src="/github1.png" alt="" className="h-full w-auto" />
+                            <div className="w-10 h-10 relative">
 
+                                <Image layout="fill" src="/github1.png" alt="" className="h-full w-auto" />
+                            </div>
                         </a>
                     </div>
                     <div className="rounded-full w-10 h-10">
                         <a href="https://twitter.com/dev_vinc" target="_blank" rel="noreferrer">
+                            <div className="w-10 h-10 relative">
+                                <Image layout="fill" src="/twitter.webp" alt="" className="h-full w-auto" />
 
-                            <img src="/twitter.webp" alt="" className="h-full w-auto" />
+                            </div>
                         </a>
                     </div>
                     <div className="rounded-full w-10 h-10">
                         <a href="https://linkedin.com/in/vincent-edeh" target="_blank" rel="noreferrer">
+                            <div className="w-10 h-10 relative">
 
-                            <img src="/linkedin.png" alt="" className="h-full w-auto" />
+                                <Image layout="fill" src="/linkedin.png" alt="" className="h-full w-auto" />
+                            </div>
                         </a>
                     </div>
                 </div>

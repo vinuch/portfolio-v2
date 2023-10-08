@@ -1,5 +1,6 @@
 import { useTheme } from 'next-themes'
 import React, { useEffect, useState } from 'react'
+import Image from 'next/image'
 import styles from "../styles/Home.module.css";
 
 import { MoonIcon, SunIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid'
@@ -33,7 +34,7 @@ export default function Nav() {
 
     return (
         <div className="py-4 px-8 bg-white dark:bg-primary2 nav flex justify-between items-center sticky top-0 left-0 right-0 z-50">
-            <Link passHref href="/"><img src="/logo.svg" alt="" className="w-20 md:w-24 cursor-pointer" /></Link>
+            <Link passHref href="/"><div className="w-20 h-20 md:w-24 relative"> <Image layout="fill" src="/logo.svg" alt="" className="cursor-pointer" /></div></Link>
 
             <ul className="hidden md:flex justify-around w-4/12 text-lg">
 

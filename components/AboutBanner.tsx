@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react'
+import Image from 'next/image'
+
 import { gsap } from "gsap";
 
 export default function AboutBanner() {
@@ -28,15 +30,15 @@ export default function AboutBanner() {
 
                 <div className="z-30 flex items-center justify-center h-5/6 overflow-x-hidden">
                     <div className="absolute md:relative w-10/12 md:w-3/12 img-left h-64 md:h-30rem border-2 border-gray1 bg-gray2 rounded-xl overflow-hidden translate-x-6" style={{ transform: 'rotate(-14deg)' }}>
-                        <img src="/pic4.jpg" alt="" className="w-full h-full object-cover object-center" />
+                        <Image layout="fill" src="/pic4.jpg" alt="" className="w-full h-full object-cover object-center" />
 
                     </div>
                     <div className="absolute md:relative w-10/12 md:w-3/12 h-64 md:h-30rem border-2 border-gray1 bg-gray2 rounded-xl -translate-y-12 z-20 overflow-hidden" style={{}}>
-                        <img src="/pic2.jpg" alt="" className="w-full h-full object-cover object-center" />
+                        <Image layout="fill" src="/pic2.jpg" alt="" className="w-full h-full object-cover object-center" />
 
                     </div>
                     <div className="absolute md:relative w-10/12 md:w-3/12 img-right h-64 md:h-30rem border-2 border-gray1 bg-gray2 rounded-xl overflow-hidden" style={{ transform: 'rotate(14deg)' }}>
-                        <img src="/pic3.jpg" alt="" className="w-full h-full object-cover object-center" />
+                        <Image layout="fill" src="/pic3.jpg" alt="" className="w-full h-full object-cover object-center" />
 
                     </div>
 
