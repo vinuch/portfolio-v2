@@ -15,14 +15,14 @@ button .group-hover\:w-full {
 }
 
 .bio{
-  background-image: url("/cloud.svg");
+  /* background-image: url("/cloud.svg"); */
 background-size: 100%;
 background-repeat: no-repeat;
 background-position: center;
 
 }
 .bioDark{
-  background-image: url("/cloud-dark.svg");
+  /* background-image: url("/cloud-dark.svg"); */
 background-size: 100%;
 background-repeat: no-repeat;
 background-position: center;

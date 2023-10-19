@@ -41,7 +41,7 @@ a {
 }
 
 .banner-title {
-  -webkit-text-stroke: 0.125rem #ad3838;
+  /* -webkit-text-stroke: 0.125rem #ad3838;/ */
   /* font-size: 5rem; */
  
   line-height: 100%;

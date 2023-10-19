@@ -29,11 +29,20 @@ export default function Banner() {
                         </div>
                         <div className="lg:w-5/12 ">
                             <div className="z-20 relative mt-6">
-                                <h2 className="text-4xl md:text-4xl font-extrabold tracking-wide">Edeh Vincent</h2>
+                                <h2 className="text-4xl md:text-4xl font-extrabold tracking-wide"><p>Hi,</p> <br /><span className="text-primary">I&apos;m</span> Edeh Vincent</h2>
 
-                                <h2 className="text-primary text-4rem md:text-5rem my-2 md:my-8 font-extrabold text-transparent dark:text-primary banner-title tracking-wide" > Software Engineer;</h2>
+                               <h2 className="text-primary text-4rem md:text-5rem my-2 md:my-8 font-extrabold dark:text-primary banner-title tracking-wide" > <span className="text-5xl dark:text-white text-black">a</span> Software Engineer;</h2>
 
-                                <p className={`${currentTheme === 'dark' ? styles.bioDark : styles.bio} md:py-24 text-lg md:text-lg tracking-wide leading-relaxed font-bold text-gray1 dark:text-white`}>I&apos;m a Software Engineer currently based in Nigeria with 3+ years of professional experience in designing high quality web experiences, building and delivering end to end solutions for digital products</p>
+                                <p className={`${currentTheme === 'dark' ? styles.bioDark : styles.bio} dark:bg-primary2 bg-gray-200 border-4 p-2 rounded-2xl border-black py-12 text-lg md:text-lg tracking-wide leading-relaxed font-bold text-gray1 dark:text-white`}>
+
+
+                                    I&apos;m a versatile Fullstack Engineer with 3+ years of professional experience
+                                    in designing high quality web experiences, building and delivering end to end solutions for digital
+                                    products. I have a strong command of technologies like Typescript, React, NextJS, Vue, NuxtJS, Node.js,
+                                    and Tailwind CSS.
+                                    <br /><br />
+                                    Let's collaborate to bring your digital visions to life.
+                                </p>
                                 <button className={`${styles.button} overflow-hidden group transition-all relative transition relative ease-in-out delay-150 cursor-pointer bg-primary flex items-center transition-all ease-in-out delay-150 justify-center text-white px-8 py-3 w-full md:w-4/12 rounded-md mt-10 font-bold text-xl bg-opacity-80`} >
                                     <span className={`${styles.absolute} absolute left-0 bg-primary2 opacity-50 h-full w-0 transition-all group-hover:w-full`} ></span>
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
