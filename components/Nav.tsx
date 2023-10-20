@@ -70,7 +70,7 @@ export default function Nav() {
 
             {
                 showMenu && (
-                    <div className="bg-primary md:hidden dark:bg-primary2 fixed top-16 left-0 w-screen h-screen z-40 flex jutify-center items-center">
+                    <div className="bg-primary md:hidden dark:bg-primary2 fixed top-24 left-0 w-screen h-screen z-40 flex jutify-center items-center">
                         <ul className="w-full text-center text-white text-5xl">
                             <li className="cursor-pointer my-16" onClick={() => { setshowMenu(false) }}> <Link href="/about">
                                 <a>about</a>
