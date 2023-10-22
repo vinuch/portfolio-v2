@@ -51,20 +51,20 @@ export default function About() {
       <div className={`${styles.container} h-100 `}>
         <AboutBanner />
         <p className=" text-xl w-10/12 mx-auto text- pb-24 leading-loose">
-          Hi, I'm Vincent Edeh, a Frontend Software Engineer with a passion for crafting top-tier web experiences. With over 3 years of professional expertise,
-          I've journeyed through the dynamic world of technology, leveraging a rich stack of tools and languages, including JavaScript, Go, React, Vue, Node.js,
+          Hi, I&apos;m Vincent Edeh, a Frontend Software Engineer with a passion for crafting top-tier web experiences. With over 3 years of professional expertise,
+          I&apos;ve journeyed through the dynamic world of technology, leveraging a rich stack of tools and languages, including JavaScript, Go, React, Vue, Node.js,
           and more. My forte is weaving pixel-perfect user interfaces and turning innovative ideas into robust, end-to-end digital solutions. <br /><br />
 
-          I'm more than just a coder; I'm a creative problem solver who thrives on building beautiful, functional web applications. My career has led me across diverse
-          industries, from finance and health tech to e-commerce. I've contributed to impactful projects that enrich the user experience and drive results for clients and employers. <br /><br />
+          I&apos;m more than just a coder; I&apos;m a creative problem solver who thrives on building beautiful, functional web applications. My career has led me across diverse
+          industries, from finance and health tech to e-commerce. I&apos;ve contributed to impactful projects that enrich the user experience and drive results for clients and employers. <br /><br />
 
-          What sets me apart? My commitment to collaboration and constant learning. I'm a team player who enjoys the challenge of working side by side with fellow engineers
-          and designers. I'm also a fast learner, adapting swiftly to new technologies and trends in the ever-evolving tech landscape. <br /><br />
+          What sets me apart? My commitment to collaboration and constant learning. I&apos;m a team player who enjoys the challenge of working side by side with fellow engineers
+          and designers. I&apos;m also a fast learner, adapting swiftly to new technologies and trends in the ever-evolving tech landscape. <br /><br />
 
-          Beyond coding, you'll find me on the basketball court, perfecting my jump shot, or at the gym, pushing my limits. I embrace the same dedication and determination
+          Beyond coding, you&apos;ll find me on the basketball court, perfecting my jump shot, or at the gym, pushing my limits. I embrace the same dedication and determination
           in my work as I do in my hobbies. <br /><br />
 
-          Currently, I'm on the lookout for exciting opportunities to challenge and elevate my skills as a fullstack engineer. Let's connect and explore the possibilities together.
+          Currently, I&apos;m on the lookout for exciting opportunities to challenge and elevate my skills as a fullstack engineer. Let&apos;s connect and explore the possibilities together.
 
           <br /><br />
 
